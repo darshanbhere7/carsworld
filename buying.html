@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png"
+        type="image/x-icon" />
+    <title>Car Dealership - Buy a Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">LUXURY CARS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br>
+
+    <!-- Buying Section -->
+    <section class="buying-section">
+        <div class="buying-form-container">
+            <h2>Fill Your Details</h2>
+            <p class="warning">Note the fields marked with * are mandatory</p><br>
+            <form action="submit_order.php" method="POST">
+                <div class="form-group">
+                    <label for="car">Car Brand: *</label>
+                    <select id="car" name="car">
+                        <option value="">Select a Brand</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="astonmartin">Aston Martin</option>
+                        <option value="bugatti">Buggati</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="maserati">Maserati</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="mclaren">McLaren</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="nissan">Nissan</option>
+                    </select>
+                    <span id="carError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="carModel">Car Model: *</label>
+                    <select id="carModel" name="carModel" required>
+                        <option value="">Select a Car</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name: *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <span id="nameError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email: *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span id="emailError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number: *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <span id="phoneError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address: *</label>
+                    <input type="text" id="address" name="address" placeholder="Street, City, ZIP code">
+                    <span id="addressError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveryDate">Preferred Delivery Date: *</label>
+                    <input type="date" id="deliveryDate" name="deliveryDate">
+                    <span id="deliveryDateError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message/Notes:</label>
+                    <textarea id="message" name="message" placeholder="Any additional requests or questions"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        I agree to the <a href="#">Terms and Conditions</a> *
+                    </label>
+                    <span id="termsError" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2024 SPIT. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/darshan-bhere-b69a14260/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/shivamdarekar2206/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

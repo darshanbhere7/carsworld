@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png"
+        type="image/x-icon" />
+    <title>Luxury Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">LUXURY CARS</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section Carousel -->
+    <section id="home" class="home-section">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="carousel-1.jpg" alt="Luxury Car 1" class="carousel-image">
+                <img src="carousel-2.jpg" alt="Luxury Car 2" class="carousel-image">
+                <img src="carousel-3.jpg" alt="Luxury Car 3" class="carousel-image">
+            </div>
+            <!-- Overlay for tint -->
+            <div class="carousel-overlay"></div>
+        </div>
+        <div class="home-content">
+            <h1>Find Your Dream Car</h1>
+            <p>Explore our collection of luxury cars, crafted for ultimate performance and style.</p>
+            <a href="#cars"><button class="buy-now">Browse Cars</button></a>
+        </div>
+    </section>
+
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <h2>Our Cars</h2><br>
+        <div class="car-flavors">
+            <!-- Car Item 1 -->
+            <div class="car-item">
+                <img src="lc2.jpg" alt="Luxury Car 2" class="car-image">
+                <div class="car-info">
+                    <h3>BMW M3 F80</h3>
+                    <p>Model: 2022</p>
+                    <p>Price: $110,000</p>
+                    <p>Engine: V12, 700hp</p>
+                    <button class="book-now-btn" onclick="window.location.href='buying.html?car=BMW%20M3%20F80'">Book
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Car Item 2 -->
+            <div class="car-item">
+                <img src="lc1.jpg" alt="Luxury Car 1" class="car-image">
+                <div class="car-info">
+                    <h3>Rolls Royce</h3>
+                    <p>Model: 2024</p>
+                    <p>Price: $300,000</p>
+                    <p>Engine: V8, 500hp</p>
+                    <button class="book-now-btn" onclick="window.location.href='buying.html?car=Rolls%20Royce'">Book
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Car Item 3 -->
+            <div class="car-item">
+                <img src="lc3.jpg" alt="Luxury Car 3" class="car-image">
+                <div class="car-info">
+                    <h3>AUDI A3</h3>
+                    <p>Model: 2021</p>
+                    <p>Price: $100,000</p>
+                    <p>Engine: V6, 400hp</p>
+                    <button class="book-now-btn" onclick="window.location.href='buying.html?car=AUDI%20A3'">Book
+                        Now</button>
+                </div>
+            </div>
+        </div><br>
+        <button class="more-cars" onclick="window.location.href='cars.html'">More Cars</button>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We specialize in premium, luxury cars that provide unmatched performance and elegance.
+            <br>
+            <a href="about.html">Click here</a> for more info.
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="g1.jpg" alt="Car 1" class="gallery-image">
+                <div class="gallery-info">
+                    <p>BMW</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g2.jpg" alt="Car 2" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Buggati</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g3.jpg" alt="Car 3" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Lamborghini Urus</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g4.jpg" alt="Car 4" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Bentley</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g5.jpg" alt="Car 5" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Ferrari SF90</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g6.jpg" alt="Car 6" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Messarti</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g7.jpg" alt="Car 7" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Porsche</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g8.jpg" alt="Car 8" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Aston Martin</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="g9.jpg" alt="Car 9" class="gallery-image">
+                <div class="gallery-info">
+                    <p>Mercedes G-Wagon</p>
+                </div>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <button class="see-more" onclick="window.location.href='gallery.html'">See More</button>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for inquiries or test drives.</p>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> Email: info@luxurycars.com</p>
+                <p><i class="fas fa-phone"></i> Phone: (123)-456-7890</p>
+                <p><i class="fas fa-clock"></i> Business Hours: Mon - Fri: 9:00 AM - 6:00 PM</p>
+                <button class="more-cars" onclick="window.location.href='contact.html'">Contact Us</button>
+            </div>
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.791502040647!2d-77.0368702!3d38.9071923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b9e8eb6d9021%3A0x2e4e3a75fd763e59!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020500!5e0!3m2!1sen!2sus!4v1633388126249!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2024 SPIT. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/darshan-bhere-b69a14260/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/shivamdarekar2206/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
